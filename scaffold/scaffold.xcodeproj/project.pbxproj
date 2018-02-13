@@ -14,6 +14,8 @@
 		49BD93A2203386870027D0A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49BD93A0203386870027D0A8 /* LaunchScreen.storyboard */; };
 		49BD93AD203386870027D0A8 /* scaffoldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BD93AC203386870027D0A8 /* scaffoldTests.swift */; };
 		49BD93B8203386870027D0A8 /* scaffoldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BD93B7203386870027D0A8 /* scaffoldUITests.swift */; };
+		49BD93C720338AE10027D0A8 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BD93C620338AE10027D0A8 /* AppDependencies.swift */; };
+		4A49E4EA37FEC7ED8FFCB1AE /* Pods_scaffold.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EC5E252F6509D3B75583A58 /* Pods_scaffold.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		41D101C9B84F426A46046507 /* Pods-scaffold.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scaffold.release.xcconfig"; path = "Pods/Target Support Files/Pods-scaffold/Pods-scaffold.release.xcconfig"; sourceTree = "<group>"; };
 		49BD9394203386870027D0A8 /* scaffold.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scaffold.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49BD9397203386870027D0A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		49BD9399203386870027D0A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,9 @@
 		49BD93B3203386870027D0A8 /* scaffoldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = scaffoldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		49BD93B7203386870027D0A8 /* scaffoldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scaffoldUITests.swift; sourceTree = "<group>"; };
 		49BD93B9203386870027D0A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49BD93C620338AE10027D0A8 /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
+		747C23B771BA1C9672DD2B5A /* Pods-scaffold.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scaffold.debug.xcconfig"; path = "Pods/Target Support Files/Pods-scaffold/Pods-scaffold.debug.xcconfig"; sourceTree = "<group>"; };
+		8EC5E252F6509D3B75583A58 /* Pods_scaffold.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_scaffold.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A49E4EA37FEC7ED8FFCB1AE /* Pods_scaffold.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34FA48949985E7E6FF987267 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8EC5E252F6509D3B75583A58 /* Pods_scaffold.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		49BD938B203386870027D0A8 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +96,8 @@
 				49BD93AB203386870027D0A8 /* scaffoldTests */,
 				49BD93B6203386870027D0A8 /* scaffoldUITests */,
 				49BD9395203386870027D0A8 /* Products */,
+				FB27C556AABE264B24310073 /* Pods */,
+				34FA48949985E7E6FF987267 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,7 +114,7 @@
 		49BD9396203386870027D0A8 /* scaffold */ = {
 			isa = PBXGroup;
 			children = (
-				49BD9397203386870027D0A8 /* AppDelegate.swift */,
+				49BD93C520338AB00027D0A8 /* Application */,
 				49BD9399203386870027D0A8 /* ViewController.swift */,
 				49BD939B203386870027D0A8 /* Main.storyboard */,
 				49BD939E203386870027D0A8 /* Assets.xcassets */,
@@ -125,6 +142,24 @@
 			path = scaffoldUITests;
 			sourceTree = "<group>";
 		};
+		49BD93C520338AB00027D0A8 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				49BD9397203386870027D0A8 /* AppDelegate.swift */,
+				49BD93C620338AE10027D0A8 /* AppDependencies.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		FB27C556AABE264B24310073 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				747C23B771BA1C9672DD2B5A /* Pods-scaffold.debug.xcconfig */,
+				41D101C9B84F426A46046507 /* Pods-scaffold.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +167,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49BD93BC203386870027D0A8 /* Build configuration list for PBXNativeTarget "scaffold" */;
 			buildPhases = (
+				192893AB3CB6B103D27952AA /* [CP] Check Pods Manifest.lock */,
 				49BD9390203386870027D0A8 /* Sources */,
 				49BD9391203386870027D0A8 /* Frameworks */,
 				49BD9392203386870027D0A8 /* Resources */,
+				FD5CB2967A606BDA7864D810 /* [CP] Embed Pods Frameworks */,
+				176700DF1AB869FE8F12D57B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,11 +292,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		176700DF1AB869FE8F12D57B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-scaffold/Pods-scaffold-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		192893AB3CB6B103D27952AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-scaffold-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD5CB2967A606BDA7864D810 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-scaffold/Pods-scaffold-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-scaffold/Pods-scaffold-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		49BD9390203386870027D0A8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49BD93C720338AE10027D0A8 /* AppDependencies.swift in Sources */,
 				49BD939A203386870027D0A8 /* ViewController.swift in Sources */,
 				49BD9398203386870027D0A8 /* AppDelegate.swift in Sources */,
 			);
@@ -424,6 +527,7 @@
 		};
 		49BD93BD203386870027D0A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 747C23B771BA1C9672DD2B5A /* Pods-scaffold.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -439,6 +543,7 @@
 		};
 		49BD93BE203386870027D0A8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41D101C9B84F426A46046507 /* Pods-scaffold.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
